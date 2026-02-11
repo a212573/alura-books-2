@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/alura-books-2/static/js/main.3bdad606.js",
+    "main.js": "/alura-books-2/static/js/main.557addc3.js",
     "static/js/453.e101392f.chunk.js": "/alura-books-2/static/js/453.e101392f.chunk.js",
     "static/media/livro.png": "/alura-books-2/static/media/livro.08cebf2371097b2d91cd.png",
     "static/media/sacola.svg": "/alura-books-2/static/media/sacola.a1f2af1cb32c08ae75c7b23485161cbe.svg",
@@ -9,10 +9,10 @@
     "static/media/logo.svg": "/alura-books-2/static/media/logo.9c54b187c810fdc3ecca29269446898f.svg",
     "static/media/lupa.svg": "/alura-books-2/static/media/lupa.4850d258f324eb7661df23385f53e02f.svg",
     "static/media/estrela.svg": "/alura-books-2/static/media/estrela.438b6f37c3eef698ccc7cf07caae278c.svg",
-    "main.3bdad606.js.map": "/alura-books-2/static/js/main.3bdad606.js.map",
+    "main.557addc3.js.map": "/alura-books-2/static/js/main.557addc3.js.map",
     "453.e101392f.chunk.js.map": "/alura-books-2/static/js/453.e101392f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3bdad606.js"
+    "static/js/main.557addc3.js"
   ]
 }
