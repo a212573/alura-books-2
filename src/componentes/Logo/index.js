@@ -6,6 +6,7 @@ const LogoContainer = styled.div`
     font-size: 30px;
     align-items: center; // Centraliza verticalmente o logo e o texto
     white-space: nowrap; // Garante que o texto fique em uma linha só
+    color: #002F52;
 `
 
 const LogoImage = styled.img`

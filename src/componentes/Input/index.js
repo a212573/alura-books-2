@@ -4,12 +4,11 @@ const Input = styled.input`
         border: 1px solid #FFF;
         background: transparent;
         border: 1px solid #FFF;
-        padding: 20px 140px;
+        padding: 20px 60px 20px 20px;
         border-radius: 50px;
-        width: 200px;
+        width: 320px;
         color: #FFF;
         font-size: 16px;
-        margin-bottom: 10px;
 
         &::placeholder {
                 color: #FFF;

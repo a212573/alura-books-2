@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Opcao = styled.li`
     font-size: 16px;
@@ -14,14 +15,29 @@ const Opcao = styled.li`
 const Opcoes = styled.ul`
     display: flex;
 `
-const textoOpcoes = ['CATEGORIAS', 'FAVORITOS','MINHA ESTANTE']
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: #002F52;
+    
+    &:visited {
+        color: #002F52;
+    }
+    
+    &:hover,
+    &:active {
+        font-weight: bold;
+    }
+`
+
+const textoOpcoes = ['CATEGORIAS', 'FAVORITOS','ESTANTE']
 
 function OpcoesHeader() {
-    return (
+    return(
         <Opcoes>
-            {textoOpcoes.map((texto) => 
-                <Opcao key={texto}><p>{texto}</p></Opcao>
-            )}
+            { textoOpcoes.map( (texto) => (
+                <StyledLink key={texto} to={`/${texto.toLowerCase()}`} ><Opcao><p>{texto}</p></Opcao></StyledLink>
+            ) ) }
         </Opcoes>
     )
 }
