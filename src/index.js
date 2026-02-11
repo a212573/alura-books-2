@@ -35,7 +35,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <BrowserRouter>
+    <BrowserRouter basename="/alura-books-2">
       <Header/>
       <Routes>
         <Route path="/favoritos" element={<Favoritos />} />
@@ -43,6 +43,7 @@ root.render(
         <Route path="/estante" element={<Estante />} />
         <Route path="/categorias" element={<Categorias />} />
         <Route path="/perfil" element={<Perfil />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
