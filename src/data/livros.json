@@ -1,0 +1,79 @@
+[
+  {
+    "id": "4",
+    "nome": "Entendendo algoritmos",
+    "categoria": "Fundamentos",
+    "descricao": "Um guia ilustrado e prático para aprender a solucionar problemas complexos com algoritmos de forma visual.",
+    "preco": "R$ 75,00"
+  },
+  {
+    "id": "5",
+    "nome": "Cangaceiro Javascript",
+    "categoria": "Linguagens",
+    "descricao": "Uma jornada aprofundada pela linguagem, focando em técnicas modernas e no poder do desenvolvimento funcional.",
+    "preco": "R$ 49,90"
+  },
+  {
+    "id": "7",
+    "nome": "Guia básico de C#",
+    "categoria": "Linguagens",
+    "descricao": "Introdução essencial à linguagem da Microsoft, cobrindo sintaxe básica e orientação a objetos.",
+    "preco": "R$ 35,00"
+  },
+  {
+    "id": "8",
+    "nome": "Guia básico de JavaScript",
+    "categoria": "Linguagens",
+    "descricao": "O ponto de partida ideal para quem deseja aprender a linguagem que move a web moderna.",
+    "preco": "R$ 32,50"
+  },
+  {
+    "id": "9",
+    "nome": "Código Limpo",
+    "categoria": "Boas Práticas",
+    "descricao": "O manual clássico para escrever códigos legíveis, eficientes e fáceis de manter por toda a vida.",
+    "preco": "R$ 95,00"
+  },
+  {
+    "id": "10",
+    "nome": "JavaScript para iniciantes",
+    "categoria": "Linguagens",
+    "descricao": "Explicações simples e exercícios práticos para quem está dando os primeiros passos na programação.",
+    "preco": "R$ 29,90"
+  },
+  {
+    "id": "11",
+    "nome": "Conhecendo o python",
+    "categoria": "Linguagens",
+    "descricao": "Uma imersão na linguagem mais versátil da atualidade, do básico à análise de dados simples.",
+    "preco": "R$ 42,00"
+  },
+  {
+    "id": "12",
+    "nome": "Imersão Alura",
+    "categoria": "Eventos",
+    "descricao": "Conteúdo prático baseado nos desafios da semana de imersão, focado em construir projetos reais.",
+    "preco": "R$ 0,00"
+  },
+  {
+    "id": "13",
+    "nome": "Arquitetura Limpa",
+    "categoria": "Boas Práticas",
+    "descricao": "Regras universais de design de software que ajudam a criar sistemas robustos e independentes de frameworks.",
+    "preco": "R$ 88,00"
+  },
+  {
+    "id": "14",
+    "nome": "Estrutura de Dados Descomplicada",
+    "categoria": "Fundamentos",
+    "descricao": "Explica de forma clara como organizar e armazenar dados para otimizar a performance das aplicações.",
+    "preco": "R$ 64,00"
+  },
+  {
+    "id": "15",
+    "nome": "Java: A Bíblia do Desenvolvedor",
+    "categoria": "Linguagens",
+    "descricao": "Um guia completo e detalhado sobre o ecossistema Java, cobrindo desde o Core até aplicações empresariais.",
+    "preco": "R$ 120,00"
+  }
+]

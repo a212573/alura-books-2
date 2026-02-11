@@ -9,7 +9,7 @@ import BotaoDescricao from '../componentes/BotaoDescricao'
 
 const AppContainer = styled.div`
    width: 100vw;
-   height: 100vh;
+   min-height: 100vh;
    background-image: linear-gradient(90deg,#002F52 35%,#326589 165%);
 `
 
@@ -43,36 +43,6 @@ const Resultado = styled.div`
    }
 `
 
-const IconesContainer = styled.div`
-   display: flex;
-   gap: 10px;
-   margin-top: 1px;
-   align-items: center;
-`
-
-const IconesGrupo = styled.div`
-   display: flex;
-   gap: 10px;
-   align-items: center;
-   margin-left: 30px;
-`
-
-const IconeBtn = styled.button`
-   background: transparent;
-   border: none;
-   cursor: pointer;
-   padding: 5px;
-   display: flex;
-   align-items: center;
-   img {
-       width: 20px;
-       height: 20px;
-   }
-   &:hover {
-       transform: scale(1.2);
-   }
-`
-
 const BotaoRemover = styled.button`
    background-color: #EB9B00;
    color: #FFF;
@@ -84,6 +54,35 @@ const BotaoRemover = styled.button`
    font-weight: bold;
    &:hover {
        background-color: #d88a00;
+   }
+`
+
+const IconesContainer = styled.div`
+   display: flex;
+   gap: 10px;
+   margin-top: 5px;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+`
+
+const GrupoIcones = styled.div`
+   display: flex;
+   gap: 10px;
+   align-items: center;
+`
+
+const IconeBtn = styled.button`
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+   img {
+       width: 20px;
+       height: 20px;
+   }
+   &:hover {
+       transform: scale(1.2);
    }
 `
 
@@ -130,12 +129,12 @@ function Favoritos() {
                <p>{favorito.nome}</p>
                <IconesContainer>
                  <BotaoRemover onClick={() => deletarFavorito(favorito.id)}>Remover</BotaoRemover>
-                 <IconesGrupo>
+                 <GrupoIcones>
                    <IconeBtn onClick={() => insertSacola(favorito.id)} title="Adicionar à sacola">
                      <img src={sacolaIcon} alt="Sacola"/>
                    </IconeBtn>
                    <BotaoDescricao descricao={favorito.descricao} preco={favorito.preco} />
-                 </IconesGrupo>
+                 </GrupoIcones>
                </IconesContainer>
              </Resultado>
            )) : null

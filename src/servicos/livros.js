@@ -1,13 +1,11 @@
-import axios from "axios"
+import livrosData from '../data/livros.json'
 
-const livrosAPI = axios.create({
-    baseURL: 'http://localhost:8000/livros/'
-})
+let livrosCache = [...livrosData]
 
 async function getLivros(){
-    const response = await livrosAPI.get('/')
-
-    return response.data
+    return new Promise((resolve) => {
+        setTimeout(() => resolve([...livrosCache]), 100)
+    })
 }
 
 export {

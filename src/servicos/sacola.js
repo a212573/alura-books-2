@@ -1,20 +1,33 @@
-import axios from "axios"
+import sacolaData from '../data/sacola.json'
+import livrosData from '../data/livros.json'
 
-const sacolaAPI = axios.create({
-    baseURL: 'http://localhost:8000/sacola/'
-})
+let sacolaCache = [...sacolaData]
 
 async function getSacola(){
-    const response = await sacolaAPI.get('/')
-    return response.data
+    return new Promise((resolve) => {
+        setTimeout(() => resolve([...sacolaCache]), 100)
+    })
 }
 
 async function postSacola(id) {
-   await sacolaAPI.post(`/${id}`)   
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const livro = livrosData.find(l => l.id === id)
+            if (livro && !sacolaCache.find(s => s.id === id)) {
+                sacolaCache.push({...livro})
+            }
+            resolve()
+        }, 100)
+    })
 }
 
 async function deleteSacola(id) {
-    await sacolaAPI.delete(`/${id}`)   
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            sacolaCache = sacolaCache.filter(s => s.id !== id)
+            resolve()
+        }, 100)
+    })
 }
 
 export {
